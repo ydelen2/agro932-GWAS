@@ -1,0 +1,16 @@
+---
+title: "pca"
+author: "Yavuz Delen"
+date: "4/30/2020"
+output: ''
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+pca <- read.table("data/282_pca.txt.eigenvec", header=TRUE)
+plot(pca$PC1, pca$PC2, xlab="PC1", ylab="PC2")
+```
+
